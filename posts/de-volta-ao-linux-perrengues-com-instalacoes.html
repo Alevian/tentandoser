@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>De volta ao Linux! Perrengues com instalações...</title>
+<style>
+:root{--bg:#ffffff;--text:#111111;--meta:#555555;--link:#0000ee;--link-visited:#551a8b;--rule:#999999;--box-bg:#f2f2f2;--box-border:#bbbbbb;--banner-bg:#fff6cc;--banner-border:#d8c477;}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#1b1b1b;--text:#e8e8e8;--meta:#aaaaaa;--link:#7aa2ff;--link-visited:#c9a6f5;--rule:#555555;--box-bg:#262626;--box-border:#444444;--banner-bg:#3a341a;--banner-border:#6b5f2e;color-scheme:dark;}}
+:root[data-theme="dark"]{--bg:#1b1b1b;--text:#e8e8e8;--meta:#aaaaaa;--link:#7aa2ff;--link-visited:#c9a6f5;--rule:#555555;--box-bg:#262626;--box-border:#444444;--banner-bg:#3a341a;--banner-border:#6b5f2e;color-scheme:dark;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);}
+.page{font-family:Georgia,"Times New Roman",Times,serif;color:var(--text);background:var(--bg);line-height:1.55;max-width:720px;margin:0 auto;padding:32px 16px 64px;}
+.meta{font-family:"Courier New",Courier,monospace;color:var(--meta);font-size:13px;}
+a{color:var(--link);}
+a:visited{color:var(--link-visited);}
+hr{border:none;border-top:1px solid var(--rule);margin:26px 0;}
+h1{font-size:24px;font-weight:bold;margin:14px 0 6px 0;}
+h2{font-size:19px;font-weight:bold;margin:28px 0 8px 0;}
+h3{font-size:16px;font-weight:bold;margin:0 0 4px 0;}
+ul{margin:6px 0;padding-left:22px;}
+li{margin:4px 0;}
+p{margin:10px 0;}
+img{max-width:100%;height:auto;}
+.banner{background:var(--banner-bg);border:1px solid var(--banner-border);padding:12px 14px;font-size:14px;margin-bottom:22px;}
+.placeholder{background:var(--box-bg);border:1px dashed var(--box-border);color:var(--meta);font-size:13px;padding:14px;text-align:center;margin:12px 0;}
+.video-link{display:block;background:var(--box-bg);border:1px solid var(--box-border);padding:14px;margin:12px 0;font-size:14px;}
+.profile{display:flex;gap:18px;align-items:flex-start;}
+.profile-photo{width:110px;height:110px;flex:0 0 110px;background:var(--box-bg);border:1px dashed var(--box-border);color:var(--meta);font-size:12px;display:flex;align-items:center;justify-content:center;text-align:center;}
+.tagline{font-style:italic;margin:6px 0 10px 0;}
+.section-note{font-size:13px;color:var(--meta);margin:2px 0 8px 0;}
+.post-item{margin:8px 0;}
+.post-item .titulo{font-weight:bold;}
+.back{font-size:14px;}
+@media (max-width:480px){.profile{flex-direction:column;}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<p class="back"><a href="../index.html">&larr; voltar para a pagina inicial</a></p>
+<p class="meta">Perrengues com o Debian &middot; Tecnologia e IA</p>
+<h1>De volta ao Linux! Perrengues com instalações...</h1>
+<p class="meta">2024-04-12</p>
+<p>&nbsp;Durante a pandemia, passei a trabalhar em casa.</p><p><br /></p><p>Usava até então um G480, da Lenovo, e comprei um Ideapad S145, da mesma marca, em maio de 2020.</p><p>&nbsp; <br /></p><p>Na época, não consegui fazer <i>dual boot</i>, e segui com o Windows 10.</p><p><br /></p><p>No entanto, após quase quatro anos trabalhando predominantemente em casa e com uso mais intensivo do Power BI, entendi por bem comprar um Ideapad 1, agora em março de 2024.</p><p><br /></p><p>Optei então por arriscar o <i>dual boot</i> no Ideapad S145.</p><p>Simplesmente reduzi o tamanho da partição ocupada pelo Windows e, com um pen drive bootável, instalei o <b>Ubuntu 22.04</b>.O <i>dual boot</i> foi criado automaticamente.</p><p>Tentei fazer o mesmo no novo Ideapad 1, porém fiquei frustrado. O pendrive bootável não era reconhecido pelo <i>firmware</i> do computador.</p><p>Além dos dois notebooks, tenho o meu primeiro, também um Lenovo, adquirido por volta de 2010, modelo G470, que estou agora usando para escrever essa postagem. Como estava no embalo de atualizar meu parque tecnológico, voltei a mexer no bichinho, já um pouco baleado.</p><p><br /></p><p>Comprei uma placa de som USB, já que a dele morreu. Com a nova placa, é possível escutar áudio, como o fone de ouvido e/ou talvez com uma caixinha que tenha entrada PS2.</p><p><br /></p><p>Só que também não consegui dar boot no velho notebook pelo tal pendrive. Então busquei um CD ou DVD.</p><p>Achei um DVD RW e tentei gravar nele o Ubuntu 22.04.4, mas outra surpresa negativa. Não cabe em um DVD!!! Somente o 24.04.1.</p><p><br /></p><p>Então fui para o <b>Debian 12</b>, que muitos tem dito estar "quase como o Ubuntu" ou que seria a melhor versão de todas.</p><p>Optei pela ISO <i>netinst</i> do Debian 12, que com seus pouco mais de 600Mb caberia até em um CD.</p><p>O <i>boot</i> pelo leitor de CD/DVD funcionou perfeitamente no G470.</p><p>Fora esses três notebooks eu tinha guardado um velho desktop, com uma placa Intel que comprei naquelas lojas de usados, da Santa Ifigênia. O processador é um Core 2 Duo.</p><p>Só que ele não tem leitor de CD. O jeito é dar boot pelo pen drive.</p><p>Consegui instalar o Debian 12, inclusive tendo reconhecido um adaptador de wi-fi, que nem as versões antigas do Ubuntu vinham reconhecendo. Trata-se do tp-link TL-WN823N.</p><p>O pen drive bootável eu fiz em um Scandisk.</p><p>Então, aproveitei para testar esse Scandisk com o Debian 12 no meu novo Ideapad1. E não é que funcionou!</p><p>Então, estou com Debian 12 no desktop antigo, no Lenovo G470 (meu primeiro notebook, adquirido em 2011) e também no novo Ideapad 1.</p><p>&nbsp;<br /></p><p>&nbsp;<br /></p><p>&nbsp;<br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p><p><br /></p>
+<hr>
+<p class="back"><a href="../index.html">&larr; voltar para a pagina inicial</a></p>
+
+</div>
+</body>
+</html>

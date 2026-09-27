@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Playlist</title>
+<style>
+:root{--bg:#ffffff;--text:#111111;--meta:#555555;--link:#0000ee;--link-visited:#551a8b;--rule:#999999;--box-bg:#f2f2f2;--box-border:#bbbbbb;--banner-bg:#fff6cc;--banner-border:#d8c477;}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#1b1b1b;--text:#e8e8e8;--meta:#aaaaaa;--link:#7aa2ff;--link-visited:#c9a6f5;--rule:#555555;--box-bg:#262626;--box-border:#444444;--banner-bg:#3a341a;--banner-border:#6b5f2e;color-scheme:dark;}}
+:root[data-theme="dark"]{--bg:#1b1b1b;--text:#e8e8e8;--meta:#aaaaaa;--link:#7aa2ff;--link-visited:#c9a6f5;--rule:#555555;--box-bg:#262626;--box-border:#444444;--banner-bg:#3a341a;--banner-border:#6b5f2e;color-scheme:dark;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);}
+.page{font-family:Georgia,"Times New Roman",Times,serif;color:var(--text);background:var(--bg);line-height:1.55;max-width:720px;margin:0 auto;padding:32px 16px 64px;}
+.meta{font-family:"Courier New",Courier,monospace;color:var(--meta);font-size:13px;}
+a{color:var(--link);}
+a:visited{color:var(--link-visited);}
+hr{border:none;border-top:1px solid var(--rule);margin:26px 0;}
+h1{font-size:24px;font-weight:bold;margin:14px 0 6px 0;}
+h2{font-size:19px;font-weight:bold;margin:28px 0 8px 0;}
+h3{font-size:16px;font-weight:bold;margin:0 0 4px 0;}
+ul{margin:6px 0;padding-left:22px;}
+li{margin:4px 0;}
+p{margin:10px 0;}
+img{max-width:100%;height:auto;}
+.banner{background:var(--banner-bg);border:1px solid var(--banner-border);padding:12px 14px;font-size:14px;margin-bottom:22px;}
+.placeholder{background:var(--box-bg);border:1px dashed var(--box-border);color:var(--meta);font-size:13px;padding:14px;text-align:center;margin:12px 0;}
+.video-link{display:block;background:var(--box-bg);border:1px solid var(--box-border);padding:14px;margin:12px 0;font-size:14px;}
+.profile{display:flex;gap:18px;align-items:flex-start;}
+.profile-photo{width:110px;height:110px;flex:0 0 110px;background:var(--box-bg);border:1px dashed var(--box-border);color:var(--meta);font-size:12px;display:flex;align-items:center;justify-content:center;text-align:center;}
+.tagline{font-style:italic;margin:6px 0 10px 0;}
+.section-note{font-size:13px;color:var(--meta);margin:2px 0 8px 0;}
+.post-item{margin:8px 0;}
+.post-item .titulo{font-weight:bold;}
+.back{font-size:14px;}
+@media (max-width:480px){.profile{flex-direction:column;}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<p class="back"><a href="../index.html">&larr; voltar para a pagina inicial</a></p>
+<h1>Playlist</h1>
+<p class="section-note">Músicas citadas, lembradas ou (quando trechos ou letras inteiras) omitidas por direitos autorais
+ao longo dos posts. A letra em si não é reproduzida aqui — só a referência e o link para o post onde ela aparece,
+que traz o comentário original do autor sempre que ele existiu no post de origem.</p>
+
+<h3>Letras total ou parcialmente omitidas nos posts (mantido só o comentário do autor, quando havia)</h3>
+<ul>
+<li><span class="meta">Titãs (comp. Sérgio Britto)</span> — "Epitáfio" — <a href="../posts/2-letras.html">+ 2 letras</a> <span class="meta">(2009-03-07)</span></li>
+<li><span class="meta">Jota Quest (comp. Márcio Buzelin)</span> — "O Vento" — <a href="../posts/duas-letrinhas.html">+ duas letrinhas...</a> <span class="meta">(2009-03-09)</span></li>
+<li><span class="meta">Ana Carolina</span> — "Vai" — <a href="../posts/provocado-volto-a-escrever.html">Provocado, volto a escrever...</a> <span class="meta">(2008-08-21, letra completa no original)</span></li>
+<li><span class="meta">Ana Carolina (comp. John)</span> — "Nada Pra Mim" — <a href="../posts/mais-uma-muito-bonita.html">Mais uma - muito bonita...</a> <span class="meta">(2009-04-05)</span></li>
+<li><span class="meta">Oswaldo Montenegro</span> — "Estrada Nova" — <a href="../posts/estrada-nova.html">ESTRADA NOVA</a> <span class="meta">(2009-02-18)</span></li>
+<li><span class="meta">Vinicius de Moraes / Toquinho</span> — "Testamento" — <a href="../posts/testamento.html">TESTAMENTO</a> <span class="meta">(2009-01-22)</span></li>
+<li><span class="meta">Cazuza</span> — "Poema" (trecho) — <a href="../posts/tempo-de-balanco.html">TEMPO DE BALANÇO!</a> <span class="meta">(2008-12-21)</span></li>
+</ul>
+
+<h3>Citadas pelo nome, sem letra reproduzida</h3>
+<ul>
+<li><span class="meta">Oswaldo Montenegro</span> — "A Lista" — <a href="../posts/tempo-de-balanco.html">TEMPO DE BALANÇO!</a> <span class="meta">(2008-12-21)</span></li>
+<li><span class="meta">Vanessa da Mata</span> — "Boa Sorte" e "Não Me Deixe Só" — <a href="../posts/a-partir-de-crime-e-castigo.html">A partir de "CRIME E CASTIGO"...</a> <span class="meta">(2009-05-31)</span></li>
+<li><span class="meta">Caetano Veloso</span> — "Queixa" e "Não Enche" — <a href="../posts/a-partir-de-crime-e-castigo.html">A partir de "CRIME E CASTIGO"...</a> <span class="meta">(2009-05-31)</span></li>
+<li><span class="meta">Bob Dylan</span> — "Blowin' in the Wind" (vídeo, sem letra reproduzida) — <a href="../posts/dois-hinos.html">DOIS HINOS</a> <span class="meta">(2011-01-09)</span></li>
+<li><span class="meta">artista não identificado com certeza</span> — "O Sol" (vídeo, sem letra reproduzida) — <a href="../posts/dois-hinos.html">DOIS HINOS</a> <span class="meta">(2011-01-09)</span></li>
+</ul>
+
+<h3>Homenagens e vídeos musicais (sem trecho de letra)</h3>
+<ul>
+<li><span class="meta">Milton Nascimento</span> — reflexão a partir de entrevista de rádio — <a href="../posts/milton-e-seus-tons-geniais.html">MILTON e seus tons geniais...</a> <span class="meta">(2008-01-28)</span></li>
+<li><span class="meta">Vinícius de Moraes</span> — homenagem, com links de vídeo (aulas/produções de alunos) — <a href="../posts/vinicius-de-moraes.html">VINÍCIUS DE MORAES</a> <span class="meta">(2011-04-04)</span></li>
+<li>Vídeo de violão instrumental — <a href="../posts/violao-bao-letra-musica-tb-20150509.html">Violão bão...letra & música tb!</a> <span class="meta">(2015-05-09)</span></li>
+<li>Vídeo de turma de formandos com música e poesia — <a href="../posts/antecessores.html">ANTECESSORES...</a> <span class="meta">(post sobre a turma Vital Fogaça)</span></li>
+</ul>
+
+<hr>
+<p class="back"><a href="../index.html">&larr; voltar para a pagina inicial</a></p>
+
+</div>
+</body>
+</html>

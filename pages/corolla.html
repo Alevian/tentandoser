@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Corolla</title>
+<style>
+:root{--bg:#ffffff;--text:#111111;--meta:#555555;--link:#0000ee;--link-visited:#551a8b;--rule:#999999;--box-bg:#f2f2f2;--box-border:#bbbbbb;--banner-bg:#fff6cc;--banner-border:#d8c477;}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#1b1b1b;--text:#e8e8e8;--meta:#aaaaaa;--link:#7aa2ff;--link-visited:#c9a6f5;--rule:#555555;--box-bg:#262626;--box-border:#444444;--banner-bg:#3a341a;--banner-border:#6b5f2e;color-scheme:dark;}}
+:root[data-theme="dark"]{--bg:#1b1b1b;--text:#e8e8e8;--meta:#aaaaaa;--link:#7aa2ff;--link-visited:#c9a6f5;--rule:#555555;--box-bg:#262626;--box-border:#444444;--banner-bg:#3a341a;--banner-border:#6b5f2e;color-scheme:dark;}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--bg);}
+.page{font-family:Georgia,"Times New Roman",Times,serif;color:var(--text);background:var(--bg);line-height:1.55;max-width:720px;margin:0 auto;padding:32px 16px 64px;}
+.meta{font-family:"Courier New",Courier,monospace;color:var(--meta);font-size:13px;}
+a{color:var(--link);}
+a:visited{color:var(--link-visited);}
+hr{border:none;border-top:1px solid var(--rule);margin:26px 0;}
+h1{font-size:24px;font-weight:bold;margin:14px 0 6px 0;}
+h2{font-size:19px;font-weight:bold;margin:28px 0 8px 0;}
+h3{font-size:16px;font-weight:bold;margin:0 0 4px 0;}
+ul{margin:6px 0;padding-left:22px;}
+li{margin:4px 0;}
+p{margin:10px 0;}
+img{max-width:100%;height:auto;}
+.banner{background:var(--banner-bg);border:1px solid var(--banner-border);padding:12px 14px;font-size:14px;margin-bottom:22px;}
+.placeholder{background:var(--box-bg);border:1px dashed var(--box-border);color:var(--meta);font-size:13px;padding:14px;text-align:center;margin:12px 0;}
+.video-link{display:block;background:var(--box-bg);border:1px solid var(--box-border);padding:14px;margin:12px 0;font-size:14px;}
+.profile{display:flex;gap:18px;align-items:flex-start;}
+.profile-photo{width:110px;height:110px;flex:0 0 110px;background:var(--box-bg);border:1px dashed var(--box-border);color:var(--meta);font-size:12px;display:flex;align-items:center;justify-content:center;text-align:center;}
+.tagline{font-style:italic;margin:6px 0 10px 0;}
+.section-note{font-size:13px;color:var(--meta);margin:2px 0 8px 0;}
+.post-item{margin:8px 0;}
+.post-item .titulo{font-weight:bold;}
+.back{font-size:14px;}
+@media (max-width:480px){.profile{flex-direction:column;}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<p class="back"><a href="../index.html">&larr; voltar para a pagina inicial</a></p>
+<h1>Corolla</h1>
+<p class="meta">acompanhamento de custo e consumo &middot; 30/04/2022 a 10/12/2025</p>
+
+<p>Numeros extraidos direto da planilha de abastecimentos (128 registros), pela mesma
+logica do script de geracao do painel (<code>monitoracorollav20gs.py</code>): soma de
+distancia, litros e custo por ano; media de velocidade e consumo por ano; custo por km
+derivado de custo/distancia. Sao os mesmos dados que alimentam o painel interativo abaixo.</p>
+
+
+<table style="width:100%;border-collapse:collapse;font-size:14px;">
+<thead>
+<tr style="border-bottom:1px solid var(--rule);text-align:left;">
+<th>ano</th><th>abastec.</th><th>dist. (km)</th><th>litros</th><th>custo</th><th>custo/km</th><th>consumo (km/l)</th><th>vel. media (km/h)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>2022</td><td>29</td><td>12.617</td><td>1.196</td><td>R$ 6.688,28</td><td>R$ 0.5301</td><td>10.91</td><td>28.4</td></tr>
+<tr><td>2023</td><td>39</td><td>17.911</td><td>1.642</td><td>R$ 9.523,04</td><td>R$ 0.5317</td><td>10.94</td><td>26.6</td></tr>
+<tr><td>2024</td><td>34</td><td>14.492</td><td>1.475</td><td>R$ 8.899,14</td><td>R$ 0.6141</td><td>9.83</td><td>23.5</td></tr>
+<tr><td>2025</td><td>26</td><td>9.873</td><td>1.076</td><td>R$ 6.721,93</td><td>R$ 0.6808</td><td>9.24</td><td>21.8</td></tr>
+<tr style="border-top:1px solid var(--rule);"></tr>
+<tr><td><strong>total</strong></td><td><strong>128</strong></td><td><strong>54.893</strong></td><td><strong>5.389</strong></td><td><strong>R$ 31.832,39</strong></td><td><strong>R$ 0.5799</strong></td><td><strong>10.28</strong></td><td><strong>25.2</strong></td></tr>
+
+</tbody>
+</table>
+
+
+<p><a href="https://alevian.github.io/Monitora-consumo/">painel interativo completo (grafico mes a mes, filtros por ano)</a></p>
+
+<h2>Postagens sobre o Corolla</h2>
+<p class="section-note">ordem cronologica &middot; 10 textos identificados no total dos blogs</p>
+<div class="post-item"><span class="meta">2017-12-25</span> &mdash; Qual o custo anual de um Corolla usadão? <span class="meta">(ainda nao publicado nesta versao)</span></div>
+<div class="post-item"><span class="meta">2018-12-22</span> &mdash; Qual o custo anual de um Corolla usadão? (ANO II) <span class="meta">(ainda nao publicado nesta versao)</span></div>
+<div class="post-item"><span class="meta">2022-04-23</span> &mdash; <a class="titulo" href="../posts/manutencao-basica-de-um-corolla-2006-07.html">Manutenção básica de um Corolla 2006/07</a></div>
+<div class="post-item"><span class="meta">2022-12-31</span> &mdash; Corolla 2006/2007 - manutenção 2022 - esse ano foi o mais puxado de todos! <span class="meta">(ainda nao publicado nesta versao)</span></div>
+<div class="post-item"><span class="meta">2024-04-11</span> &mdash; Manutenção COROLLA 07 em 2024 <span class="meta">(ainda nao publicado nesta versao)</span></div>
+<div class="post-item"><span class="meta">2024-06-23</span> &mdash; Custo Corolla - Primeiro semestre 2024 <span class="meta">(ainda nao publicado nesta versao)</span></div>
+<div class="post-item"><span class="meta">2024-11-24</span> &mdash; <a class="titulo" href="../posts/corolla-segundo-semestre-de-2024.html">Corolla - segundo semestre de 2024</a></div>
+<div class="post-item"><span class="meta">2025-07-17</span> &mdash; Corolla - primeiro semestre de 2025 <span class="meta">(ainda nao publicado nesta versao)</span></div>
+<div class="post-item"><span class="meta">2025-12-17</span> &mdash; <a class="titulo" href="../posts/custo-corolla-brad-2007-em-2025.html">Custo Corolla Brad 2007 em 2025</a></div>
+<div class="post-item"><span class="meta">2025-12-25</span> &mdash; Vale a pena financiar um Corolla 2022 com pequena entrada, mesmo já tendo um carro velho para seguir rodando? <span class="meta">(ainda nao publicado nesta versao)</span></div>
+
+
+<hr>
+<p class="back"><a href="../index.html">&larr; voltar para a pagina inicial</a></p>
+
+</div>
+</body>
+</html>
